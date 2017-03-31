@@ -1,0 +1,218 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul,ol{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #444;
+}
+
+/*底部footer部分样式*/
+header{
+	width: 100%;
+	height: 64px;
+	line-height: 64px;
+	background: #666;	
+}
+header h1{
+	height: 64px;
+	width: 80%;
+	float: left;
+	font-size: 1rem;
+}
+header .nav{
+		height: 64px;
+}
+header h1 a {
+	height: 64px;
+	float: left;
+
+}
+header h1 a img{
+	width: 50px;
+	height:50px;
+	margin:7px 10px 7px 30px;
+	vertical-align: middle;
+}
+/*主体内容*/
+section{
+	width: 100%;
+	background: #EFEFEF;
+	position: relative
+}
+section video{
+	width: 100%;
+}
+section .overlay{
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: transparent;
+	height: 20rem;
+	width: 100%;
+	z-index: 100;
+}
+
+section .container{
+		width: 100%;
+		padding:2rem 10% 4rem;
+		overflow: hidden;
+		min-height: 10rem;
+		background: #505393;	
+}
+
+section .container dl{
+	width: 50%;
+	height: auto;
+	background: #4B4D89;
+	color:#FFFFFF;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	float: left;
+	border-bottom: 1px solid #aaa;
+}
+section .container dl:nth-child(even){
+	background: #405E8E;
+	border-bottom: 1px solid #efefef;
+	border-left: 1px solid #efefef;
+}
+section .container dl dt{
+	width: 80%;
+	margin-left: 10%;
+	height: 2rem;
+	text-align: left;
+	font-weight: 900;
+	font-size: 1.3rem;
+}
+section .container dl dt img{
+	height: 2rem;
+	width: 2rem;
+	vertical-align: middle;
+}
+section .container dl dd{
+	width: 80%;
+	margin-left: 10%;
+	padding: 0 2rem;	
+	text-align: left;
+}
+
+section .section_footer{
+	
+	width: 100%;
+	padding:4rem 0;
+	background: #2e3842;
+}
+.section_footer .footer_inner{
+	padding: 2rem 20%;
+	overflow: hidden;
+}
+.section_footer_left{
+	width: 50%;
+	float: left;
+	color:#fff;
+	height: 8rem;
+	line-height: 4rem;
+}
+.section_footer_right{
+	width: 50%;
+	float: right;
+	color:#fff;
+}
+.section_footer_right li{
+	height: 4rem;
+	padding: 1rem 0;
+	
+}
+.section_footer_right li a{
+	width: 50%;
+	height: 2rem;
+	line-height: 2rem;
+	border-radius: 0.1rem;
+	display: block;
+	margin: 0 auto;
+	color:#fff;
+	background: #ed4933;
+}
+.section_footer_right li:nth-child(2) a{
+		background: #006633;
+}
+/*底部*/
+footer{
+	width: 100%;
+	margin: 0 auto;
+	background: #444444;
+}
+footer ul.icons{
+	width: 40%;
+	overflow: hidden;
+	height: 3rem;
+	margin: 0 auto;
+}
+footer ul.icons li{
+	width: 25%;
+	height: 3rem;
+	line-height: 3rem;
+	float: left;	
+	color:#efefef;
+}
+footer ul.icons li >a{
+	color:#efefef;
+}
+footer ul.copyright{
+	height: 3rem;
+	line-height: 3rem;
+	color:#efefef;
+}
+
+@media only screen and (max-width:960px) {
+	section .container{
+		width: 100%;
+		padding: 2rem 0 4rem;	
+	}
+	section .container dl{
+	width: 100%;
+	border:0;
+	}
+	.section_footer_left,
+	.section_footer_right{
+		width: 100%;
+	}
+	.section_footer .footer_inner{
+		padding: 2rem 0;
+	}
+	section .section_footer{
+		padding:0;
+		
+	}
+	section .container dl:nth-child(even){
+		border: 0;
+	}
+}
